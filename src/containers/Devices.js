@@ -54,7 +54,7 @@ class Devices extends Component {
     notify() {
         axios.post('http://35.201.2.209:8000/notify', {
            
-            headers: { Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub3ciOjE1Njg3MDkxOTg1ODgsInNlbmRlciI6ImRheV9hbmR5QGhvdG1haWwuY29tIiwiaWF0IjoxNTY4NzA5MTk4fQ.pVO8qro00ClF-h8i6YB5kwzmUQEN74GoTcu2I_OE3nU" },
+            headers: { Authorization: "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub3ciOjE1Njg3MDkxOTg1ODgsInNlbmRlciI6ImRheV9hbmR5QGhvdG1haWwuY29tIiwiaWF0IjoxNTY4NzA5MTk4fQ.pVO8qro00ClF-h8i6YB5kwzmUQEN74GoTcu2I_OE3nU" },
 
             name: 'Andrew Day',
             email: 'day_andy@hotmail.com',

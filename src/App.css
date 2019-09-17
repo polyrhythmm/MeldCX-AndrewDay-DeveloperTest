@@ -114,7 +114,8 @@
   color:white;
   text-align: center;
   font-weight: 100;
-  margin-left: 270px;  
+  margin-left: 270px;
+  margin-top: -330px;  
 }
 
 .devices-text {
@@ -150,6 +151,7 @@
   border-radius: 50%;
   position: relative;
   margin-left: -300px;
+  margin-top: -500px;
 }
 .footer {
   position: absolute;
