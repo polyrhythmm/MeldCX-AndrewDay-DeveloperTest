@@ -59,7 +59,8 @@ class Devices extends Component {
         var bodyParameters = {
             name: 'Andrew Day',
             email: 'day_andy@hotmail.com',
-            repoUrl: 'https://github.com/polyrhythmm/MeldCX-AndrewDay-DeveloperTest'
+            repoUrl: 'https://github.com/polyrhythmm/MeldCX-AndrewDay-DeveloperTest',
+            message: 'Finally worked!'
         }
         
         axios.post( 
