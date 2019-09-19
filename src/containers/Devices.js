@@ -52,19 +52,25 @@ class Devices extends Component {
     }
 
     notify() {
-        axios.post('http://35.201.2.209:8000/notify', {
-           
-            headers: { Authorization: "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub3ciOjE1Njg3MDkxOTg1ODgsInNlbmRlciI6ImRheV9hbmR5QGhvdG1haWwuY29tIiwiaWF0IjoxNTY4NzA5MTk4fQ.pVO8qro00ClF-h8i6YB5kwzmUQEN74GoTcu2I_OE3nU" },
-
+        var config = {
+            headers: {'Authorization': "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub3ciOjE1Njg4NTM2NzQ3NTYsInNlbmRlciI6ImRheV9hbmR5QGhvdG1haWwuY29tIiwiaWF0IjoxNTY4ODUzNjc0fQ.VznnRXJVtBo76dBffshR9vpw0zREPt8cngP6y07Fke4"}
+        };
+        
+        var bodyParameters = {
             name: 'Andrew Day',
             email: 'day_andy@hotmail.com',
-            repoUrl: 'https://github.com/polyrhythmm/MeldCX-AndrewDay-DeveloperTest',
-
-        }).then(res => {
-            console.log(res);
-        }).catch(err => {
-            console.log(err);
-        })
+            repoUrl: 'https://github.com/polyrhythmm/MeldCX-AndrewDay-DeveloperTest'
+        }
+        
+        axios.post( 
+          'http://35.201.2.209:8000/notify',
+          bodyParameters,
+          config
+        ).then((response) => {
+          console.log(response)
+        }).catch((error) => {
+          console.log("ERROR" + error)
+        });
     }
 
     logout() {
